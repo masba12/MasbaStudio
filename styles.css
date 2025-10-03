@@ -1,0 +1,185 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; line-height: 1.6; background: white; color: #333; }
+
+/* Top Bar */
+.top-bar {
+  background: #A7C7E7;
+  color: #000;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.top-bar a { color: #000; margin-left: 15px; text-decoration: none; }
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.logo { font-size: 24px; font-weight: bold; color: #2a2a2a; }
+nav a { margin: 0 15px; text-decoration: none; color: #333; }
+nav a:hover { color: #004080; }
+
+/* Banner */
+.banner {
+  position: relative;
+  width: 100%;
+  max-width: 920px;      /* fixed width target */
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f2f2f2;
+}
+
+/* force the fixed desktop height (920x281) but allow responsive resize */
+.banner img {
+  width: 100%;
+  height: 281px;         /* target height for desktop banner */
+  object-fit: cover;
+  display: block;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background: rgba(0,0,0,0.45);
+  padding: 12px 20px;
+  border-radius: 8px;
+  max-width: 85%;
+}
+
+.banner .tag {
+  background: #A7C7E7;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.banner h1 {
+  font-size: 1.6rem;
+  margin: 8px 0;
+}
+
+/* button */
+.btn {
+  background: #004080;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn:hover { background: #A7C7E7; color: #000; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .banner {
+    max-width: 100%;
+    margin: 12px;
+    border-radius: 8px;
+  }
+
+  .banner img {
+    height: auto;         /* let image scale naturally on small screens */
+  }
+
+  /* move overlay to bottom on small screens for better readability */
+  .banner-content {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 92%;
+    background: rgba(0,0,0,0.55);
+    text-align: center;
+  }
+
+  .banner h1 { font-size: 1.2rem; }
+}
+
+
+/* Features */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  background: #f4f4f4;
+}
+.feature { text-align: center; font-size: 14px; }
+
+/* Categories */
+.categories {
+  padding: 40px 50px;
+  text-align: center;
+}
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.category-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.category-card img { width: 100%; height: 200px; object-fit: cover; }
+.category-card h3 { padding: 10px; background: #A7C7E7; color: #000; }
+.category-card:hover { transform: scale(1.05); }
+
+/* Products */
+.products { padding: 40px 50px; text-align: center; }
+.products h2 { margin-bottom: 20px; }
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.product-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.product-card:hover { transform: translateY(-5px); }
+.product-card img { width: 100%; border-radius: 10px; }
+.old-price { text-decoration: line-through; color: #888; margin-right: 5px; }
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #25D366;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.whatsapp-btn:hover { background: #128C7E; }
+
+/* Footer */
+footer {
+  background: #004080;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header { flex-direction: column; }
+  nav a { display: block; margin: 10px 0; }
+  .banner-content { left: 5%; right: 5%; text-align: center; }
+}
