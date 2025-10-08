@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Masba Studio | Catalog</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Masba Studio" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <p>🎁 Free Shipping for orders over RM100</p>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="logo">
+      <img src="images/logo-masbastudio.png" alt="Masba Studio Logo">
+      <span>Masba Studio</span>
+    </div>
+    <div class="menu-toggle">&#9776;</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="catalog.html" class="active">Catalog</a>
+    </nav>
+  </header>
+
+  <!-- Catalog Section -->
+  <section class="catalog">
+    <h2>Masba Studio Catalog</h2>
+    <p class="subtitle">Download our latest resources and guides for your projects.</p>
+
+    <div class="catalog-container">
+      <div class="catalog-card">
+        <img src="images/catalog-pdf.png" alt="Catalog PDF">
+        <h3>📘 Product Catalog (PDF)</h3>
+        <p>Browse our full range of sublimation T-shirts, designs, and printing options.</p>
+        <a href="files/MasbaStudio_Catalog.pdf" download class="btn-download">Download Catalog</a>
+      </div>
+
+      <div class="catalog-card">
+        <img src="images/size-chart.jpg" alt="Size Chart">
+        <h3>📏 T-Shirt Size Chart</h3>
+        <p>Check your perfect fit before ordering custom shirts with Masba Studio.</p>
+        <a href="images/size-chart.jpg" download class="btn-download">Download Size Chart</a>
+      </div>
+
+      <div class="catalog-card">
+        <img src="images/template-guide.jpg" alt="Template">
+        <h3>🧩 Design Template (Coming Soon)</h3>
+        <p>Editable templates to help you create your own sublimation artwork easily.</p>
+        <a href="#" class="btn-disabled">Coming Soon</a>
+      </div>
+    </div>
+
+    <div class="catalog-contact">
+      <h3>Need Custom Quote or Help?</h3>
+      <a href="https://wa.me/60168590975?text=Hi%20Masba%20Studio!%20I'm%20interested%20in%20your%20catalog%20and%20want%20to%20know%20more."
+         target="_blank" class="whatsapp-btn">📲 Chat on WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>About Company</h4>
+        <p>Masba Studio specializes in sublimation printing, custom design, and accessories with premium quality and affordable prices.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <p>📍 Hutan Melintang, Perak</p>
+        <p>📞 +6016-859 0975</p>
+        <p>💬 <a href="https://wa.me/60168590975" style="color:#A7C7E7;">Chat via WhatsApp</a></p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Sublimation Printing</a></li>
+          <li><a href="services.html">Custom Design</a></li>
+          <li><a href="services.html">Bulk Orders</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Others</h4>
+        <ul>
+          <li><a href="products.html">Our Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>&copy; 2025 Masba Studio. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

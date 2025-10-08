@@ -4,50 +4,62 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Masba Studio</title>
-  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Masba Studio" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- Top Bar -->
   <div class="top-bar">
     <p>🎁 Free Shipping for orders over RM100</p>
-    <div class="top-links">
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-      <a href="#">Help Center</a>
-      <span>Call Us: +6016-859-0975</span>
-    </div>
   </div>
 
-  <!-- Navigation -->
+  <!-- Header / Navigation -->
   <header>
-    <div class="logo">Masba Studio</div>
-    <nav>
-      <a href="#">Shop All</a>
-      <a href="#">T-Shirts</a>
-      <a href="#">Custom Design</a>
-      <a href="#">Accessories</a>
-      <a href="#">Sale</a>
+    <div class="logo">
+      <img src="images/logo-masbastudio.png" alt="Masba Studio Logo">
+      <span>Masba Studio</span>
+    </div>
+    <div class="menu-toggle">&#9776;</div>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="products.html">Products</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="catalog.html">Catalog</a>
     </nav>
   </header>
 
   <!-- Banner -->
   <section class="banner">
-    <img src="Landscape/T-SHIRT-PRINTING.png" alt="Masba Studio Banner">
-    <div class="banner-content">
-      <span class="tag">Best Prices</span>
-      <h1>Incredible Deals on Custom T-Shirts</h1>
-      <p>Get more for less on our exclusive designs</p>
-      <a href="#" class="btn">Shop Now</a>
+    <div class="banner-slideshow">
+      <img src="images/BUTTON BADGE PRINTING.jpg" alt="Banner 1" class="active">
+      <img src="images/CUSTOM BAGS PRINTING.jpg" alt="Banner 2">
+      <img src="images/CUSTOM MUG PRINTING.jpg" alt="Banner 3">
+      <img src="images/GIFT PRINTING.jpg" alt="Banner 4">
+      <img src="images/LANYARD + ID CARD PRINTING.png" alt="Banner 5">
+      <img src="images/T-SHIRT-PRINTING.png" alt="Banner 6">
     </div>
   </section>
 
   <!-- Features -->
   <section class="features">
-    <div class="feature">🚚 Free Shipping Over RM100</div>
-    <div class="feature">🎨 Custom Design Available</div>
-    <div class="feature">💳 Secure Payment</div>
-    <div class="feature">⏰ 24/7 Support</div>
+    <div class="feature"><i class="fi fi-ss-truck-side"></i> Free Shipping Over RM100</div>
+    <div class="feature"><i class="fi fi-sr-palette"></i> Custom Design Available</div>
+    <div class="feature"><i class="fi fi-sr-credit-card"></i> Secure Payment</div>
+    <div class="feature"><i class="fi fi-sr-headset"></i> 24/7 Support</div>
   </section>
 
   <!-- Shop by Category -->
@@ -69,6 +81,8 @@
     </div>
   </section>
 
+  <div class="line"></div>
+
   <!-- Best Sellers -->
   <section class="products">
     <h2>Best Sellers</h2>
@@ -77,25 +91,90 @@
         <img src="images/tshirt1.jpg" alt="T-shirt">
         <h3>Graphic Tee</h3>
         <p><span class="old-price">RM55.00</span> RM40.00</p>
-        <a class="whatsapp-btn" href="https://wa.me/60165557738?text=Hello%20Masba%20Studio!%20I%20want%20to%20order%20Graphic%20Tee%20(RM40.00)" target="_blank">Buy Now</a>
+        <a class="whatsapp-btn" href="https://wa.me/60168590975?text=Hello%20Masba%20Studio!%20I%20want%20to%20order%20Graphic%20Tee%20(RM40.00)" target="_blank">Buy Now</a>
       </div>
       <div class="product-card">
         <img src="images/tshirt2.jpg" alt="T-shirt">
         <h3>Custom Sublimation</h3>
         <p><span class="old-price">RM65.00</span> RM50.00</p>
-        <a class="whatsapp-btn" href="https://wa.me/60165557738?text=Hello%20Masba%20Studio!%20I%20want%20to%20order%20Custom%20Sublimation%20(RM50.00)" target="_blank">Buy Now</a>
+        <a class="whatsapp-btn" href="https://wa.me/60168590975?text=Hello%20Masba%20Studio!%20I%20want%20to%20order%20Custom%20Sublimation%20(RM50.00)" target="_blank">Buy Now</a>
       </div>
       <div class="product-card">
         <img src="images/tshirt3.jpg" alt="T-shirt">
         <h3>Sports Jersey</h3>
         <p>RM60.00</p>
-        <a class="whatsapp-btn" href="https://wa.me/60165557738?text=Hello%20Masba%20Studio!%20I%20want%20to%20order%20Sports%20Jersey%20(RM60.00)" target="_blank">Buy Now</a>
+        <a class="whatsapp-btn" href="https://wa.me/60168590975?text=Hello%20Masba%20Studio!%20I%20want%20to%20order%20Sports%20Jersey%20(RM60.00)" target="_blank">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="line"></div>
+
+  <!-- Our Software -->
+  <section class="software">
+    <h2>Software We Used</h2>
+    <div class="software-grid">
+      <div class="software-card">
+        <i class="fi fi-brands-photoshop"></i>
+        <h3>Adobe Photoshop</h3>
+        <p>Professional photo editing and T-shirt design software.</p>
+      </div>
+      <div class="software-card">
+        <i class="fi fi-brands-illustrator"></i>
+        <h3>Adobe Illustrator</h3>
+        <p>Perfect for vector logo design and print layouts.</p>
+      </div>
+      <div class="software-card">
+        <i class="fi fi-brands-canva"></i>
+        <h3>Canva</h3>
+        <p>Quick drag-and-drop tool for creative marketing designs.</p>
+      </div>
+      <div class="software-card">
+        <i class="fi fi-brands-capcut"></i>
+        <h3>CapCut</h3>
+        <p>Used for editing promotional videos and visual showcases.</p>
+      </div>
+      <div class="software-card">
+        <i class="fi fi-brands-affinity"></i>
+        <h3>Affinity Photo</h3>
+        <p>Lightweight and powerful photo editing software.</p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>About Company</h4>
+        <p>Masba Studio specializes in sublimation printing, custom design, and accessories with premium quality and affordable prices.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <p>📍 Hutan Melintang, Perak</p>
+        <p>📞 +6016-859 0975</p>
+        <p>💬 <a href="https://wa.me/60168590975" style="color:#A7C7E7;">Chat via WhatsApp</a></p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Sublimation Printing</a></li>
+          <li><a href="services.html">Custom Design</a></li>
+          <li><a href="services.html">Bulk Orders</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Others</h4>
+        <ul>
+          <li><a href="products.html">Our Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
     <p>&copy; 2025 Masba Studio. All Rights Reserved.</p>
   </footer>
 
