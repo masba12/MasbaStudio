@@ -5,6 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Masba Studio | Services</title>
 
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Masba Studio provides professional sublimation printing, graphic design, and bulk customization services for individuals and businesses.">
+  <meta name="keywords" content="sublimation printing, bulk order, graphic design, Masba Studio services, corporate printing Malaysia, T-shirt customization">
+  <meta name="author" content="Masba Studio">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Masba Studio Services - Custom Design & Printing">
+  <meta property="og:description" content="From T-shirt sublimation to creative design, Masba Studio delivers top-quality results for your brand.">
+  <meta property="og:image" content="https://masbastudio.my/images/services-banner.jpg">
+  <meta property="og:url" content="https://masbastudio.my/services.html">
+  <meta property="og:type" content="website">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://masbastudio.my/services.html">
+
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -33,48 +48,56 @@
       <a href="index.html">Home</a>
       <a href="products.html">Products</a>
       <a href="services.html" class="active">Services</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a href="about-us.html">About Us</a>
       <a href="catalog.html">Catalog</a>
     </nav>
   </header>
 
   <!-- Services Section -->
-  <section class="services">
+  <section class="products services">
     <h2>Our Services</h2>
-    <p class="subtitle">We provide top-notch design, printing, and customization solutions tailored for your needs.</p>
+    <p class="subtitle">Professional creative and printing services to make your brand stand out.</p>
 
-    <div class="service-grid">
-      <div class="service-card">
+    <!-- Search / Filter (optional for services) -->
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="🔍 Search services...">
+    </div>
+
+    <div class="product-grid" id="serviceGrid">
+      <div class="product-card" data-name="Sublimation Printing">
         <img src="images/sublimation-printing.png" alt="Sublimation Printing">
-        <h3>Sublimation Printing</h3>
-        <p>High-quality sublimation for t-shirts, jerseys, and more. Perfect for small or bulk orders.</p>
-        <a href="https://wa.me/60168590975?text=Hello%20Masba%20Studio!%20I'm%20interested%20in%20your%20Sublimation%20Printing%20Service." 
-           class="service-btn" target="_blank">Chat via WhatsApp</a>
+        <div class="product-info">
+          <h3>Sublimation Printing</h3>
+          <p>High-quality sublimation for t-shirts, jerseys, and more — perfect for small or bulk orders.</p>
+          <a class="whatsapp-btn" href="https://wa.me/60168590975?text=Hello%20Masba%20Studio!%20I'm%20interested%20in%20your%20Sublimation%20Printing%20Service." target="_blank">Chat via WhatsApp</a>
+        </div>
       </div>
 
-      <div class="service-card">
+      <div class="product-card" data-name="Custom Design">
         <img src="images/custom-design.png" alt="Custom Design">
-        <h3>Custom Design</h3>
-        <p>Bring your ideas to life with our professional graphic design services — logos, posters, and more.</p>
-        <a href="https://wa.me/60168590975?text=Hi%20Masba%20Studio!%20I’d%20like%20to%20request%20a%20Custom%20Design%20Service." 
-           class="service-btn" target="_blank">Chat via WhatsApp</a>
+        <div class="product-info">
+          <h3>Custom Design</h3>
+          <p>Bring your ideas to life with our professional graphic design services — logos, posters, and more.</p>
+          <a class="whatsapp-btn" href="https://wa.me/60168590975?text=Hi%20Masba%20Studio!%20I’d%20like%20to%20request%20a%20Custom%20Design%20Service." target="_blank">Chat via WhatsApp</a>
+        </div>
       </div>
 
-      <div class="service-card">
+      <div class="product-card" data-name="Bulk Orders">
         <img src="images/bulk-order.png" alt="Bulk Orders">
-        <h3>Bulk Orders</h3>
-        <p>Need large quantities for your team, school, or event? Get special bulk pricing and fast turnaround.</p>
-        <a href="https://wa.me/60168590975?text=Hi%20Masba%20Studio!%20I’m%20interested%20in%20Bulk%20Order%20Service." 
-           class="service-btn" target="_blank">Chat via WhatsApp</a>
+        <div class="product-info">
+          <h3>Bulk Orders</h3>
+          <p>Need large quantities for your team, school, or event? Get special bulk pricing and fast turnaround.</p>
+          <a class="whatsapp-btn" href="https://wa.me/60168590975?text=Hi%20Masba%20Studio!%20I’m%20interested%20in%20Bulk%20Order%20Service." target="_blank">Chat via WhatsApp</a>
+        </div>
       </div>
 
-      <div class="service-card">
+      <div class="product-card" data-name="Accessories Printing">
         <img src="images/accessories-printing.png" alt="Accessories Printing">
-        <h3>Accessories Printing</h3>
-        <p>We also print button badges, lanyards, and other accessories — perfect for promotions and gifts.</p>
-        <a href="https://wa.me/60168590975?text=Hi%20Masba%20Studio!%20Tell%20me%20more%20about%20Accessories%20Printing." 
-           class="service-btn" target="_blank">Chat via WhatsApp</a>
+        <div class="product-info">
+          <h3>Accessories Printing</h3>
+          <p>We also print button badges, lanyards, and other accessories — perfect for promotions and gifts.</p>
+          <a class="whatsapp-btn" href="https://wa.me/60168590975?text=Hi%20Masba%20Studio!%20Tell%20me%20more%20about%20Accessories%20Printing." target="_blank">Chat via WhatsApp</a>
+        </div>
       </div>
     </div>
   </section>
@@ -83,32 +106,31 @@
   <footer>
     <div class="footer-container">
       <div class="footer-section">
-        <h4>About Company</h4>
-        <p>Masba Studio specializes in sublimation printing, custom design, and accessories with premium quality and affordable prices.</p>
+        <h4>About Masba Studio</h4>
+        <p>Masba Studio specializes in sublimation printing, graphic design, and creative media — helping brands and individuals express their identity with style.</p>
       </div>
-
       <div class="footer-section">
         <h4>Contact Us</h4>
         <p>📍 Hutan Melintang, Perak</p>
         <p>📞 +6016-859 0975</p>
-        <p>💬 <a href="https://wa.me/60168590975" style="color:#A7C7E7;">Chat via WhatsApp</a></p>
+        <p>💬 <a href="https://wa.me/60168590975" target="_blank" style="color:#A7C7E7;">Chat via WhatsApp</a></p>
       </div>
-
       <div class="footer-section">
-        <h4>Services</h4>
+        <h4>Our Services</h4>
         <ul>
           <li><a href="services.html">Sublimation Printing</a></li>
-          <li><a href="services.html">Custom Design</a></li>
-          <li><a href="services.html">Bulk Orders</a></li>
+          <li><a href="services.html">Graphic Design</a></li>
+          <li><a href="services.html">Video Editing</a></li>
+          <li><a href="services.html">Website Design</a></li>
         </ul>
       </div>
-
       <div class="footer-section">
-        <h4>Others</h4>
+        <h4>Quick Links</h4>
         <ul>
-          <li><a href="products.html">Our Products</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="catalog.html">Catalog</a></li>
         </ul>
       </div>
     </div>
@@ -117,8 +139,22 @@
 
   <script>
     // Mobile menu toggle
-    document.querySelector('.menu-toggle').addEventListener('click', () => {
-      document.querySelector('.nav-links').classList.toggle('active');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      menuToggle.classList.toggle('open');
+    });
+
+    // Service search filter
+    const searchInput = document.getElementById('searchInput');
+    const serviceCards = document.querySelectorAll('.product-card');
+    searchInput.addEventListener('keyup', function() {
+      const term = this.value.toLowerCase();
+      serviceCards.forEach(card => {
+        const name = card.getAttribute('data-name').toLowerCase();
+        card.style.display = name.includes(term) ? 'block' : 'none';
+      });
     });
   </script>
 
