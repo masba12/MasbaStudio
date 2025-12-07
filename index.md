@@ -1,8 +1,4 @@
 ---
-layout: default
-title: "Happy Jekylling!"
+layout: index
+title: "Custom T-Shirt Sublimation & Creative Design Malaysia"
 ---
-
-## You're ready to go!
-
-Start developing your Jekyll website.
