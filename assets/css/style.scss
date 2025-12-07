@@ -1,3 +1,5 @@
+---
+---
 /* =====================================================
    MASBA STUDIO - MASTER STYLESHEET
    Clean | Responsive | Professional
@@ -1088,4 +1090,44 @@ footer {
 
 .catalog-contact .whatsapp-btn:hover {
   background-color: #1ebe57;
+}
+
+$text_primary: #004080;
+$text_base: #555;
+
+$yellow: #FFD700;
+
+section {
+	padding: 60px 20px;
+	text-align: center;
+	background-color: #f9fafc;
+
+	h2 {
+		font-size: 2rem;
+		font-weight: 700;
+		color: $text_primary;
+		margin-bottom: 10px;
+		position: relative;
+		display: inline-block;
+
+		&::after{
+			content: " ";
+			display: block;
+			width: 60px;
+			height: 4px;
+			background-color: $yellow;
+			margin: 10px auto 0;
+			border-radius: 2px;
+		}
+	}
+
+	& > p.subtitle{
+		font-size: 1rem;
+		color: $text_base;
+		margin-bottom: 40px;
+	}
+}
+
+.card {
+	background-color: #fff;
 }

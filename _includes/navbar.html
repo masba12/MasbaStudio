@@ -13,13 +13,12 @@
 
 	<!-- Navigation -->
 	<nav class="nav-links">
-		<a
-			href="index.html"
-			class="active"
-		>Home</a>
-		<a href="products.html">Products</a>
-		<a href="services.html">Services</a>
-		<a href="about-us.html">About Us</a>
-		<a href="catalog.html">Catalog</a>
+		{% for link in site.data.navigation.links %} 
+			<a href="{{link.link | relative_url }}"
+			{% if page.navbar_active == link.name %}
+				class="active"
+			{% endif %}
+			>{{link.name}}</a>	
+		{% endfor %}
 	</nav>
 </header>
