@@ -1,0 +1,11 @@
+links:
+  - name: Home
+    link: /index.html
+  - name: Products
+    link: /products.html
+  - name: Services
+    link: /services.html
+  - name: About Us
+    link: /about-us.html
+  - name: Catalog
+    link: /catalog.html
