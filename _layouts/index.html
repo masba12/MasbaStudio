@@ -1,0 +1,157 @@
+---
+layout: base
+---
+
+<!-- Greeting Section -->
+<section class="greeting">
+	<div class="greeting-container">
+		<h1>Welcome to <span>Masba Studio</span></h1>
+		<p>We specialize in <strong>T-Shirt Sublimation Printing</strong>, <strong>Graphic Design</strong>,
+			<strong>Video Editing</strong>, and <strong>Simple Website Development</strong>. All crafted with
+			creativity and passion to make your brand stand out.
+		</p>
+		<a
+			href="https://wa.me/60168590975?text=Hi%20Masba%20Studio!%20I'm%20interested%20in%20your%20services."
+			class="cta-btn"
+			target="_blank"
+		>📲 Chat with Us on WhatsApp</a>
+	</div>
+</section>
+
+<!-- Features -->
+<section class="features">
+	<div class="feature">
+		<span class="material-symbols-outlined">local_shipping</span>
+		<p>Free Shipping Over RM100</p>
+	</div>
+	<div class="feature">
+		<span class="material-symbols-outlined">brush</span>
+		<p>Custom Design Available</p>
+	</div>
+	<div class="feature">
+		<span class="material-symbols-outlined">credit_card</span>
+		<p>Secure Payment</p>
+	</div>
+	<div class="feature">
+		<span class="material-symbols-outlined">support_agent</span>
+		<p>24/7 Support</p>
+	</div>
+</section>
+
+<!-- Our Services -->
+<section class="services">
+	<h2>Our Services</h2>
+	<div class="services-container">
+		{% for service in site.data.services %}
+		<div class="service-card">
+			<img
+				src="{{ service.image | relative_url }}"
+				alt="{{ service.title }}"
+			>
+			<h3>{{ service.title }}</h3>
+			<p>{{ service.description }}</p>
+		</div>
+		{% endfor %}
+	</div>
+</section>
+
+<!-- Creative Tools We Use -->
+<section class="software">
+	<h2>Creative Tools We Use</h2>
+	<p class="section-subtitle">Our favorite design and editing software that help us bring ideas to life.</p>
+
+	<div class="tools-container slider-wrapper">
+		<div
+			class="tools-slider slider"
+			id="toolsSlider"
+		>
+			{% for software in site.data.softwares %}
+			<div class="tool-card">
+				<img src="{{ software.image | relative_url }}" alt="{{ software.title }}">
+				<h3>{{ software.title }}</h3>
+				<p>{{ software.description }}</p>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<!-- Call To Action -->
+<section class="cta">
+	<h2>Let's Create Something Amazing Together!</h2>
+	<p>Whether it’s a custom T-shirt, creative video, or stunning design — we’re ready to bring your idea to life.
+	</p>
+	<a
+		href="{{"/about-us.html#contact" | relative_url}}"
+		class="cta-btn"
+	>Contact Us Now</a>
+</section>
+
+
+<script>
+	document.addEventListener( "DOMContentLoaded", function ()
+	{
+		// Detect mobile device
+		const isMobile = window.matchMedia( "(max-width: 768px)" ).matches;
+
+		// --- AUTO SLIDER (only for mobile) ---
+		if ( isMobile )
+		{
+			const sliders = document.querySelectorAll( ".services-container, .slider-wrapper" );
+
+			sliders.forEach( ( container ) =>
+			{
+				let slider = container.querySelector( ".slider" ) || container;
+				let scrollAmount = 0;
+				let interval;
+				const card = slider.querySelector( ".service-card, .card" );
+				const cardWidth = card ? card.offsetWidth : 250;
+				const gap = 20;
+				const step = cardWidth + gap;
+
+				const startAutoSlide = () =>
+				{
+					interval = setInterval( () =>
+					{
+						if ( scrollAmount + container.offsetWidth >= slider.scrollWidth )
+						{
+							scrollAmount = 0;
+						} else
+						{
+							scrollAmount += step;
+						}
+						slider.scrollTo( { left: scrollAmount, behavior: "smooth" } );
+					}, 6000 );
+				};
+
+				const stopAutoSlide = () => clearInterval( interval );
+
+				startAutoSlide();
+
+				container.addEventListener( "touchstart", stopAutoSlide, { passive: true } );
+				container.addEventListener( "touchend", startAutoSlide, { passive: true } );
+			} );
+		}
+
+		// --- MOBILE MENU ---
+		const menuToggle = document.querySelector( '.menu-toggle' );
+		const navLinks = document.querySelector( '.nav-links' );
+
+		if ( menuToggle && navLinks )
+		{
+			menuToggle.addEventListener( 'click', () =>
+			{
+				navLinks.classList.toggle( 'active' );
+				menuToggle.classList.toggle( 'open' );
+			} );
+
+			// Close menu when a link is clicked
+			navLinks.querySelectorAll( 'a' ).forEach( link =>
+			{
+				link.addEventListener( 'click', () => navLinks.classList.remove( 'active' ) );
+			} );
+		}
+	} );
+</script>
+
+<script src="script.js"></script>
