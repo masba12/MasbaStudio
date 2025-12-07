@@ -2,3 +2,6 @@ url: "https://masbastudio.my" # the base hostname & protocol for your site, e.g.
 baseurl: "/" # the subpath of your site, e.g. /blog
 title: "Masba Studio" # the name of your site, e.g. ACME Corp.
 timezone: UTC
+
+plugins:
+  - jekyll-seo-tag
