@@ -1,140 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ms">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Masba Studio | About Us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Kami | Masba Studio</title>
 
-  <!-- SEO Meta -->
-  <meta name="description" content="Discover Masba Studio: creative printing, sublimation, custom T-shirt, and design services in Malaysia.">
-  <meta name="keywords" content="Masba Studio, sublimation printing, T-shirt customization, graphic design, Malaysia">
-  <link rel="stylesheet" href="style.css" />
+  <!-- SEO -->
+  <meta name="description" content="Kenali Masba Studio, misi, visi dan pasukan profesional kami dalam reka bentuk grafik, cetakan T-shirt dan perkhidmatan digital.">
+  <meta name="keywords" content="Masba Studio, tentang kami, pasukan, misi, visi, perkhidmatan kreatif">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Top Bar -->
-  <div class="top-bar">
-    <p>🎁 Free Shipping for orders over RM100</p>
-  </div>
-
-  <!-- Header -->
-  <header>
+  <!-- HEADER -->
+  <header class="header">
     <div class="logo">
       <img src="images/logo-masbastudio.png" alt="Masba Studio Logo">
       <span>Masba Studio</span>
     </div>
-    <div class="menu-toggle">&#9776;</div>
     <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="services.html">Services</a>
-      <a href="about-us.html" class="active">About Us</a>
-      <a href="catalog.html">Catalog</a>
+      <a href="index.html">Utama</a>
+      <a href="catalog.html">Katalog</a>
+      <a href="services.html">Perkhidmatan</a>
+      <a href="about-us.html" class="active">Tentang Kami</a>
+      <a href="downloads.html">Muat Turun</a>
     </nav>
+    <div class="menu-toggle">&#9776;</div>
   </header>
 
-  <!-- About Section -->
-  <section class="about-us" style="padding:60px 20px;">
-    <h2>Who We Are</h2>
-    <p class="subtitle">Professional sublimation printing, custom T-shirt design, and creative solutions trusted across Malaysia.</p>
-    <div class="about-container" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:30px; max-width:1200px; margin:0 auto;">
-      
-      <div class="about-card">
-        <img src="images/about-us.jpg" alt="Masba Studio Team" style="border-radius:12px; width:100%; height:200px; object-fit:cover;">
-        <h3>Our Story</h3>
-        <p>Masba Studio is a creative company based in Hutan Melintang, Perak. We help individuals and businesses bring their visions to life through high-quality sublimation printing, graphic design, and custom product solutions. Our passion is turning creativity into tangible, memorable products for our clients.</p>
+  <!-- SIDEBAR MOBILE -->
+  <div class="sidebar">
+    <div class="close-btn">&times;</div>
+    <a href="index.html">Utama</a>
+    <a href="catalog.html">Katalog</a>
+    <a href="services.html">Perkhidmatan</a>
+    <a href="about-us.html" class="active">Tentang Kami</a>
+    <a href="downloads.html">Muat Turun</a>
+  </div>
+
+  <!-- HERO / INTRO -->
+  <section class="intro">
+    <div class="intro-content">
+      <h2>Tentang Masba Studio</h2>
+      <p>Kami adalah penyedia perkhidmatan kreatif profesional dalam reka bentuk grafik, cetakan T-shirt, produk digital, dan template Canva. Kenali misi, visi, dan pasukan kami di sini.</p>
+    </div>
+  </section>
+
+  <!-- MISSION & VISION -->
+  <section class="services-preview">
+    <h2>Misi & Visi Kami</h2>
+    <div class="service-grid">
+
+      <div class="service-card why-card">
+        <span class="material-symbols-outlined">flag</span>
+        <div class="card-content">
+          <h3>Misi</h3>
+          <p>Menyediakan perkhidmatan kreatif berkualiti tinggi yang membantu individu dan perniagaan menonjol secara profesional.</p>
+        </div>
       </div>
 
-      <div class="about-card">
-        <h3>Our Mission</h3>
-        <p>Provide professional and affordable printing and design services while ensuring customer satisfaction and confidence in every project.</p>
-      </div>
-
-      <div class="about-card">
-        <h3>Why Choose Us</h3>
-        <ul>
-          <li>High-quality sublimation printing materials</li>
-          <li>Fast turnaround and reliable service</li>
-          <li>Custom designs tailored to your needs</li>
-          <li>Friendly customer support and local expertise</li>
-        </ul>
+      <div class="service-card why-card">
+        <span class="material-symbols-outlined">visibility</span>
+        <div class="card-content">
+          <h3>Visi</h3>
+          <p>Menjadi studio kreatif pilihan utama di Malaysia untuk perkhidmatan reka bentuk grafik dan produk digital profesional.</p>
+        </div>
       </div>
 
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="about-us" style="padding:60px 20px;">
-    <h2>Contact Us</h2>
-    <p class="subtitle">Reach out for inquiries or custom orders</p>
-    <div class="contact-container" style="display:flex; flex-wrap:wrap; max-width:1000px; margin:0 auto; gap:40px; justify-content:center;">
-
-      <!-- Contact Info -->
-      <div class="contact-card" style="flex:1 1 300px;">
-        <h3>Get in Touch</h3>
-        <p>📍 Hutan Melintang, Perak</p>
-        <p>📞 +6016-859 0975</p>
-        <p>⏰ Mon – Sat: 9:00 AM – 6:00 PM</p>
-        <p><a href="https://wa.me/60168590975" target="_blank" class="whatsapp-btn">Chat via WhatsApp</a></p>
+  <!-- TEAM -->
+  <section class="services-preview">
+    <h2>Pasukan Kami</h2>
+    <div class="service-grid">
+      <div class="service-card why-card">
+        <img src="images/team1.jpg" alt="Pengarah Kreatif">
+        <div class="card-content">
+          <h3>Aleemshah Amiruddin</h3>
+          <p>Pengarah Kreatif – Memimpin projek dan memastikan setiap rekaan berkualiti tinggi.</p>
+        </div>
       </div>
 
-      <!-- Contact Form -->
-      <div class="contact-card" style="flex:1 1 400px;">
-        <h3>Send a Message</h3>
-        <form action="#" method="POST" style="display:flex; flex-direction:column; gap:15px;">
-          <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" placeholder="Enter your name" required>
-          
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
-          
-          <a href="https://wa.me/60168590975?text=Hello%20Masba%20Studio!" class="whatsapp-btn" target="_blank">Chat via WhatsApp</a>
-        </form>
+      <div class="service-card why-card">
+        <img src="images/team2.jpg" alt="Pereka Grafik">
+        <div class="card-content">
+          <h3>Sarah Lim</h3>
+          <p>Pereka Grafik – Pakar dalam reka bentuk logo, poster dan media sosial.</p>
+        </div>
       </div>
-      
+
+      <div class="service-card why-card">
+        <img src="images/team3.jpg" alt="Pengurus Digital">
+        <div class="card-content">
+          <h3>Ahmad Faizal</h3>
+          <p>Pengurus Digital – Menyediakan fail digital siap guna untuk pemasaran dan projek kreatif.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta-content">
+      <h2>Mulakan Projek Kreatif Anda Bersama Kami</h2>
+      <p>Kami bersedia membantu anda menghasilkan rekaan profesional yang menonjol di pasaran dan media sosial.</p>
+      <a href="services.html" class="btn-primary">Tempah Sekarang</a>
+      <a href="contact.html" class="btn-secondary">Hubungi Kami</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    <div class="footer-container">
-      <div class="footer-section">
-        <h4>About Masba Studio</h4>
-        <p>Masba Studio specializes in sublimation printing, graphic design, and creative media — helping brands and individuals express their identity with style.</p>
-      </div>
-      <div class="footer-section">
-        <h4>Contact Us</h4>
-        <p>📍 Hutan Melintang, Perak</p>
-        <p>📞 +6016-859 0975</p>
-        <p>💬 <a href="https://wa.me/60168590975" target="_blank" style="color:#A7C7E7;">Chat via WhatsApp</a></p>
-      </div>
-      <div class="footer-section">
-        <h4>Our Services</h4>
-        <ul>
-          <li><a href="services.html">Sublimation Printing</a></li>
-          <li><a href="services.html">Graphic Design</a></li>
-          <li><a href="services.html">Video Editing</a></li>
-          <li><a href="services.html">Website Design</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="catalog.html">Catalog</a></li>
-        </ul>
-      </div>
+    <p>© 2025 Masba Studio. Semua hak cipta terpelihara.</p>
+    <div class="social-icons">
+      <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+      <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="images/whatsapp.svg" alt="WhatsApp"></a>
     </div>
-    <p>&copy; 2025 Masba Studio. All Rights Reserved.</p>
   </footer>
 
-  <script>
-    document.querySelector('.menu-toggle').addEventListener('click', () => {
-      document.querySelector('.nav-links').classList.toggle('active');
-    });
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>

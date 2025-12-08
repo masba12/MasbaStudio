@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muatturun | Masba Studio</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Muat turun produk digital profesional dari Masba Studio. Template, fail grafik, dan sumber kreatif.">
+  <meta name="keywords" content="Masba Studio, muatturun, produk digital, template Canva, grafik">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo-masbastudio.png" alt="Masba Studio Logo">
+      <span>Masba Studio</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Utama</a>
+      <a href="catalog.html">Katalog</a>
+      <a href="services.html">Perkhidmatan</a>
+      <a href="about-us.html">Tentang Kami</a>
+      <a href="downloads.html" class="active">Muat Turun</a>
+    </nav>
+    <div class="menu-toggle">&#9776;</div>
+  </header>
+
+  <!-- SIDEBAR MOBILE -->
+  <div class="sidebar">
+    <div class="close-btn">&times;</div>
+    <a href="index.html">Utama</a>
+    <a href="catalog.html">Katalog</a>
+    <a href="services.html">Perkhidmatan</a>
+    <a href="about-us.html">Tentang Kami</a>
+    <a href="downloads.html" class="active">Muat Turun</a>
+  </div>
+
+  <!-- HERO / PAGE TITLE -->
+  <section class="intro">
+    <div class="intro-content">
+      <h2>Muat Turun Produk Digital</h2>
+      <p>Dapatkan produk digital kami dengan mudah. Cari dan muatturun fail yang sesuai untuk projek kreatif anda.</p>
+
+      <div class="search-bar">
+        <span class="material-symbols-outlined">search</span>
+        <input type="text" id="searchInput" placeholder="Cari produk untuk dimuatturun...">
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOADS GRID -->
+  <section class="services-preview">
+    <div class="service-grid" id="downloadGrid">
+
+      <div class="service-card product-card">
+        <img src="images/download1.jpg" alt="Template Canva Profesional">
+        <div class="card-content">
+          <h3>Template Canva Profesional</h3>
+          <p>Template siap guna untuk media sosial dan promosi.</p>
+          <a href="#" class="btn-primary">Muat Turun</a>
+        </div>
+      </div>
+
+      <div class="service-card product-card">
+        <img src="images/download2.jpg" alt="Fail Grafik PSD">
+        <div class="card-content">
+          <h3>Fail Grafik PSD</h3>
+          <p>Fail PSD berkualiti tinggi untuk rekaan kreatif anda.</p>
+          <a href="#" class="btn-primary">Muat Turun</a>
+        </div>
+      </div>
+
+      <div class="service-card product-card">
+        <img src="images/download3.jpg" alt="Icon & Ilustrasi">
+        <div class="card-content">
+          <h3>Icon & Ilustrasi</h3>
+          <p>Koleksi ikon dan ilustrasi untuk projek reka bentuk.</p>
+          <a href="#" class="btn-primary">Muat Turun</a>
+        </div>
+      </div>
+
+      <div class="service-card product-card">
+        <img src="images/download4.jpg" alt="Template Poster">
+        <div class="card-content">
+          <h3>Template Poster</h3>
+          <p>Poster siap guna untuk promosi atau event anda.</p>
+          <a href="#" class="btn-primary">Muat Turun</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Masba Studio. Semua hak cipta terpelihara.</p>
+    <div class="social-icons">
+      <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+      <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="images/whatsapp.svg" alt="WhatsApp"></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Search filter
+    const searchInput = document.getElementById("searchInput");
+    const downloadGrid = document.getElementById("downloadGrid");
+    const cards = downloadGrid.getElementsByClassName("product-card");
+
+    searchInput.addEventListener("keyup", () => {
+      const filter = searchInput.value.toLowerCase();
+      Array.from(cards).forEach(card => {
+        const title = card.querySelector("h3").textContent.toLowerCase();
+        card.style.display = title.includes(filter) ? "" : "none";
+      });
+    });
+  </script>
+</body>
+</html>

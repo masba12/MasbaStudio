@@ -1,0 +1,9 @@
+RM 25.00
+
+Artwork Specifications:
+
+Artboard Size: 58cm x 100cm
+File Format: PNG only
+Color Format: RGB only
+Resolution: 300dpi
+Background: Transparent
