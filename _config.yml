@@ -1,16 +1,34 @@
 url: "https://masbastudio.my" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/" # the subpath of your site, e.g. /blog
 title: "Masba Studio" # the name of your site, e.g. ACME Corp.
-timezone: UTC
+keywords: "Masba Studio, reka bentuk grafik, baju sublimation, template Canva, printing Malaysia"
 
-defaults:
-  - scope:
-      path: ""
-    values:
-      keywords: "Masba Studio, sublimation printing Malaysia, custom T-shirt, graphic design, video editing, CapCut design, Canva, website design Malaysia, printing Perak"
+
 
 plugins:
   - jekyll-seo-tag
 
-# jekyll-seo-tag configurations
+# jekyll-seo-tag
 author: Masba Studio
+locale: ms_MY
+
+
+
+
+
+
+
+exclude:
+  - "*.config.js"
+  - package.json
+  - pnpm-lock.yaml
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

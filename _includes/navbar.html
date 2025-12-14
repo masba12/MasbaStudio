@@ -1,24 +1,13 @@
-<!-- Header -->
-<header>
-	<div class="logo">
-		<img
-			src="{{'/assets/images/logo-masbastudio.png'}}"
-			alt="Masba Studio Logo"
-		>
-		<span>Masba Studio</span>
-	</div>
-
-	<!-- Hamburger Menu -->
-	<div class="menu-toggle">&#9776;</div>
-
-	<!-- Navigation -->
-	<nav class="nav-links">
-		{% for link in site.data.navigation.links %} 
-			<a href="{{link.link | relative_url }}"
-			{% if page.navbar_active == link.name %}
-				class="active"
-			{% endif %}
-			>{{link.name}}</a>	
+<nav>
+	<a href="{{ "/" | relative_url }}" class="brand">
+		<img src="{{ "/assets/images/logo-masbastudio.png" | relative_url }}" alt="{{ site.title }} Logo" class="logo">
+		<span class="title">{{ site.title }}</span>
+	</a>
+	<ul class="navlinks">
+		{% for nav in site.data.navigation %}
+			<li>
+				<a href="{{ nav.permalink }}">{{ nav.label }}</a>
+			</li>
 		{% endfor %}
-	</nav>
-</header>
+	</ul>
+</nav>
