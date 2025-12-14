@@ -1,8 +1,4 @@
 ---
-layout: default
-title: "Happy Jekylling!"
+layout: index
+title: "Kreatif & Profesional"
 ---
-
-## You're ready to go!
-
-Start developing your Jekyll website.

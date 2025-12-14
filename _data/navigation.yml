@@ -1,0 +1,9 @@
+- name: catalogs
+  label: Katalog
+  permalink: /catalogs.html
+- name: contact-us
+  label: Hubungi
+  permalink: /contact-us.html
+- name: about-us
+  label: Tentang Kami
+  permalink: /about-us.html
