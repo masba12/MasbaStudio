@@ -1,0 +1,19 @@
+- title: "Adobe Photoshop"
+  description: "Professional photo editing and T-shirt design tool."
+  image: "/assets/images/softwares/adobe_photoshop_icon.png"
+
+- title: "Adobe Illustrator"
+  description: "Perfect for logos, vectors, and print layouts."
+  image: "/assets/images/softwares/adobe_illustrator_icon.png"
+
+- title: "Canva"
+  description: "Easy drag-and-drop tool for creative marketing visuals."
+  image: "/assets/images/softwares/canva_icon.png"
+
+- title: "CapCut"
+  description: "Used for editing promotional videos and reels."
+  image: "/assets/images/softwares/capcut_icon.png"
+
+- title: "Affinity Photo"
+  description: "Lightweight and powerful photo editing app."
+  image: "/assets/images/softwares/affinity_studio_icon.png"
