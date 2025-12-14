@@ -342,7 +342,9 @@ body.show-menu {
 
       .service-cta {
         display: block;
+        width: 300px;
         max-width: 100%;
+        margin: 0 auto;
         padding: 18px 70px;
         font-size: 16px;
         font-weight: 600;
@@ -406,28 +408,29 @@ body.show-menu {
 
 .main-cta {
   position: relative;
-  height: 607px;
+
+  // height: 607px;
   background-image: linear-gradient(to top right, $blue-700, $blue-800);
   overflow: hidden;
 
   .tilted-bg {
     position: absolute;
-    top: 0%;
-    left: -40%;
-    width: 200%;
-    height: 140%;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 1800px;
+    transform: translate(-50%, -50%) rotate(-42deg);
 
     // transform: translate(-50%, -50%);
     background-color: $blue-600;
     z-index: 0;
     transform-origin: center center;
-    rotate: 42deg;
   }
 
   .content {
     position: relative;
+    padding: 90px 20px;
     z-index: 10;
-    padding-top: 180px;
     text-align: center;
 
     .cta-title {
@@ -446,13 +449,17 @@ body.show-menu {
       display: flex;
       align-items: center;
       justify-content: center;
-      max-width: 640px;
+      max-width: 100%;
       margin: 0 auto;
-      gap: 30px;
+      flex-wrap: wrap;
+      gap: 15px 30px;
       
       .book-now {
-        display: block;
-        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        max-width: 100%;
         padding: 20px;
         font-size: 16px;
         font-weight: 600;
@@ -460,12 +467,11 @@ body.show-menu {
         border-radius: 6px;
         background-color: $blue-700;
         text-align: center;
-
       }
 
       .contact-us {
         display: block;
-        width: 100%;
+        width: 300px;
         padding: 20px;
         font-size: 16px;
         font-weight: 600;
