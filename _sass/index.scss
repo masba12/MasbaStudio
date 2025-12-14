@@ -61,6 +61,10 @@ $slate-200: #E2E8F0;
 $slate-700: #314158;
 $slate-600: #45556C;
 $slate-800: #1D293D;
+$sm: 640px;
+$md: 768px;
+$xl: 1024px;
+$xxl: 1440px;
 
 // Navigation
 nav {
@@ -72,7 +76,7 @@ nav {
   justify-content: space-between;
   width: 100%;
   height: 96px;
-  padding: 18px 30px;
+  padding: 18px 12px;
   color: white;
   z-index: 20;
   background-color: $blue-600;
@@ -93,14 +97,55 @@ nav {
     }
   }
 
-  .navlinks {
-    display: flex;
-    justify-content: end;
-    gap: 45px;
+  .menu-toggler {
+    .hide {
+      display: none;
+    }
+  }
 
-    a {
+  .navlinks {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: calc(100vh - 96px);
+    background-color: $blue-600;
+
+      a {
+      display: block;
+      padding: 16px 20px;
       font-size: 20px;
       font-weight: 600;
+    }
+  }
+
+  // .navlinks {
+  //   display: flex;
+  //   justify-content: end;
+  //   gap: 45px;
+
+  //   a {
+  //     font-size: 20px;
+  //     font-weight: 600;
+  //   }
+  // }
+}
+
+body.show-menu {
+  nav {
+    .menu-toggler {
+      .show {
+        display: none;
+      }
+
+      .hide {
+        display: block;
+      }
+    }
+
+    .navlinks {
+      display: block;
     }
   }
 }
@@ -113,7 +158,7 @@ nav {
   height: 100vh;
   max-height: 890px;
   background-color: $blue-600;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   padding-top: 96px;
   overflow: hidden;
   margin-bottom: 120px;
@@ -134,15 +179,16 @@ nav {
 
   .left {
     height: 100%;
+    padding: 0 60px;
     overflow: hidden;
     z-index: 10;
-    padding-left: 112px;
-    padding-top: 160px;
+    padding-top: 120px;
 
     h1 {
       display: flex;
       flex-direction: column;
       margin-bottom: 42px;
+      text-align: center;
 
       .subtitle {
         font-size: 24px;
@@ -198,6 +244,7 @@ nav {
 
   .right {
     position: relative;
+    display: none;
 
     .blob {
       position: absolute;
@@ -437,4 +484,48 @@ footer {
   height: 96px;
   color: white;
   background-color: $blue-800;
+}
+
+@media screen and (min-width: $sm) {
+  nav {
+    padding: 0 30px;
+
+    .menu-toggler {
+      display: none;
+    }
+
+    .navlinks {
+      position: static;
+      display: flex;
+      justify-content: end;
+      width: auto;
+      height: auto;
+      gap: 30px;
+
+      a {
+        padding: 0;
+      }
+    }
+  }
+
+ 
+}
+
+@media screen and (width >= $md) {
+ .hero {
+    grid-template-columns: 1fr 1fr;
+
+    .left {
+      padding-left: 112px;
+      padding-top: 160px;
+
+      h1 {
+        text-align: left;
+      }
+    }
+
+    .right {
+      display: block;
+    }
+  }
 }
