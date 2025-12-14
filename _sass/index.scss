@@ -490,6 +490,7 @@ footer {
   align-items: center;
   justify-content: center;
   height: 96px;
+  font-size: 14px;
   color: white;
   background-color: $blue-800;
 }
@@ -523,15 +524,33 @@ footer {
     }
   }
 
- 
+ .services {
+  padding: 0 30px;
+ }
 }
 
 @media screen and (width >= $md) {
  .hero {
+    .left {
+      width: 600px;
+      margin: 0 auto;
+      padding-top: 160px;
+
+      .cta {
+        flex-wrap: nowrap;
+      }
+    }
+  }
+}
+
+@media screen and (width >= $xl) {
+  .hero {
     grid-template-columns: 1fr 1fr;
 
     .left {
-      padding-left: 112px;
+      padding: 0;
+      background-color: transparent;
+      padding-left: 20px;
       padding-top: 160px;
 
       h1 {
@@ -541,6 +560,53 @@ footer {
 
     .right {
       display: block;
+    }
+  }
+
+  .services {
+    .service {
+      flex-direction: row;
+      margin-bottom: 40px;
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+
+      .service-detail {
+        padding-top: 25px;
+
+        .service-title {
+          font-size: 36px;
+          text-align: left;
+        }
+
+        .service-cta {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .customer-feedback {
+    .feedback-title {
+      font-size: 36px;
+    }
+
+    .feedbacks {
+      flex-wrap: nowrap;
+
+    }
+  }
+
+  .main-cta {
+    .tilted-bg {
+      width: 600px;
+    }
+
+    .content {
+      .cta-title {
+        font-size: 36px;
+      }
     }
   }
 }
