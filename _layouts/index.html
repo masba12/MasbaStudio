@@ -15,22 +15,24 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 </head>
-<body>
+<body class="">
 	{% include navbar.html %}
 	<main>
 		<section class="hero">
 			<div class="left">
-				<h1>
-					<span class="subtitle">Solusi Kreatif untuk</span>
-					<span class="title">Bisnes & Jenama Anda</span>
-				</h1>
-				<p class="description">
-					Membantu individu, pelajar, dan SME membina jenama melalui perkhidmatan percetakan berkualiti dan pemasaran digital kreatif seperti design grafik, video editing dan pembangunan website.
-				</p>
+				<div class="details">
+					<h1>
+						<span class="subtitle">Solusi Kreatif untuk</span>
+						<span class="title">Bisnes & Jenama Anda</span>
+					</h1>
+					<p class="description">
+						Membantu individu, pelajar, dan  lore membina jenama melalui perkhidmatan percetakan berkualiti dan pemasaran digital kreatif seperti design grafik, video editing dan pembangunan website.
+					</p>
 
-				<div class="cta">
-					<a href="{{ "/catalogs.html" | relative_url }}" class="primary-button">Lihat Katalog</a>
-					<a href="{{ "/about-us.html" | relative_url }}" class="secondary-button">Hubungi Kami</a>
+					<div class="cta">
+						<a href="{{ "/catalogs.html" | relative_url }}" class="primary-button">Lihat Katalog</a>
+						<a href="{{ "/about-us.html" | relative_url }}" class="secondary-button">Hubungi Kami</a>
+					</div>
 				</div>
 			</div>
 			<div class="right">
@@ -105,7 +107,6 @@
 				</div>
 			</div>
 		</section>
-
 		<section class="main-cta">
 			<div class="tilted-bg"></div>
 			<div class="content">
@@ -121,6 +122,8 @@
 	</main>
 	<footer>
 		<p>&copy 2025 Masba Studio. Hak Cipta Terpelihara.</p>
-	</footer>
+	</footer> 
+
+	<script src="{{ "/assets/js/script.js" }}"></script>
 </body>
 </html>
