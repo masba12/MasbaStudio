@@ -5,6 +5,10 @@ keywords: "Masba Studio, reka bentuk grafik, baju sublimation, template Canva, p
 
 defaults:
   - scope:
+      path: ""
+    values:
+      image: /assets/images/logo-masbastudio.png
+  - scope:
       path: "assets/**/*"
     values:
       sitemap: false
@@ -16,6 +20,8 @@ plugins:
 # jekyll-seo-tag
 author: Masba Studio
 locale: ms_MY
+logo: /assets/images/logo-masbastudio.png
+tagline: Kreatif & Professional
 
 
 
