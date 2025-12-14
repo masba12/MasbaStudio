@@ -367,7 +367,7 @@ body.show-menu {
   margin-bottom: 120px;
 
   .feedback-title {
-    font-size: 36px;
+    font-size: 28px;
     color: $blue-800;
     margin-bottom: 68px;
     text-align: center;
@@ -377,7 +377,9 @@ body.show-menu {
     display: flex;
     align-items: top;
     justify-content: center;
-    gap: 80px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 20px;
 
     .feedback {
       padding: 60px;
