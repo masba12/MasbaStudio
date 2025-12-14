@@ -3,10 +3,15 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 title: "Masba Studio" # the name of your site, e.g. ACME Corp.
 keywords: "Masba Studio, reka bentuk grafik, baju sublimation, template Canva, printing Malaysia"
 
-
+defaults:
+  - scope:
+      path: "assets/**/*"
+    values:
+      sitemap: false
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # jekyll-seo-tag
 author: Masba Studio
