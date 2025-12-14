@@ -66,6 +66,10 @@ $md: 768px;
 $xl: 1024px;
 $xxl: 1440px;
 
+body {
+  padding-top: 96px;
+}
+
 // Navigation
 nav {
   position: fixed;
@@ -138,6 +142,40 @@ body.show-menu {
       display: block;
     }
   }
+}
+
+section {
+  padding: 0 20px;
+  margin-bottom: 96px;
+
+  &:first-child {
+    padding-top: 96px;
+  }
+
+  .section-head {
+    margin-bottom: 96px;
+    text-align: center;
+
+    .section-title {
+      font-size: 28px;
+      color: $blue-800;
+    }
+
+    .section-subtitle {
+      font-size: 16px;
+      color: $slate-600;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 96px;
+  font-size: 14px;
+  color: white;
+  background-color: $blue-800;
 }
 
 // Hero
@@ -485,14 +523,30 @@ body.show-menu {
   }
 }
 
-footer {
+.goals {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 96px;
-  font-size: 14px;
-  color: white;
-  background-color: $blue-800;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  .goal {
+    width: 450px;
+    max-width: 100%;
+    padding: 30px 20px;
+
+    .goal-title {
+      display: block;
+      font-size: 24px;
+      color: $blue-800;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    p {
+      color: $slate-600;
+    }
+  }
 }
 
 @media screen and (width >= $sm) {
