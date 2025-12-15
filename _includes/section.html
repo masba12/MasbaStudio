@@ -1,0 +1,13 @@
+<section>
+	<div class="section-head">
+		{% if include.is_h1 %}
+			<h1 class="section-title">{{ include.title }}</h1>
+		{% else %}
+			<h2 class="section-title">{{ include.title }}</h2>
+		{% endif %}
+		<p class="section-subtitle">{{ include.subtitle }}</p>
+	</div>
+	<div class="section-content">
+		{{ include.content }}
+	</div>
+</section>
