@@ -16,7 +16,7 @@ title: Perkhidmatan Kami
 		</div>
 	</div>
 	<div class="service">
-		<img src="{{ "/assets/images/digital-marketing.png" | relative_url }}" alt="Digital Marketing Service" class="service-image">
+		<img src="{{ "/assets/images/printing.png" | relative_url }}" alt="Brand Printing Service" class="service-image">
 		<div class="service-detail">
 			<span class="service-title">Brand Printing</span>
 			<p class="service-description">
