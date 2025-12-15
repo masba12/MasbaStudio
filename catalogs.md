@@ -1,6 +1,7 @@
 ---
 layout: base
 title: Perkhidmatan Kami
+description: "Perkhidmatan profesional dari Masba Studio termasuk reka bentuk grafik, cetakan T-shirt dan perkhidmatan digital."
 ---
 
 {% capture our_services %}
