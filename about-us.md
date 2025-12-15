@@ -1,6 +1,7 @@
 ---
 layout: base
-title: About Us
+title: Tentang Kami
+description: "Kenali Masba Studio, misi, visi dan pasukan profesional kami dalam reka bentuk grafik, cetakan T-shirt dan perkhidmatan digital."
 ---
 
 {% capture about_us %}

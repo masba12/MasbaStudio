@@ -1,6 +1,7 @@
 ---
 layout: base
 title: Hubungi Kami
+description: "Ada soalan atau ingin mulakan projek? Hubungi kami hari ini untuk perkhidmatan grafik, video dan pembangunan laman web yang profesional."
 ---
 
 {% capture contact_us %}
