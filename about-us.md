@@ -22,3 +22,5 @@ title: About Us
 	content=about_us
 	is_h1=true
 %}
+
+{% include main-cta.html %}
