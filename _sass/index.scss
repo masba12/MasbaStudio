@@ -61,6 +61,7 @@ $slate-200: #E2E8F0;
 $slate-700: #314158;
 $slate-600: #45556C;
 $slate-800: #1D293D;
+$green-500: #00C950;
 $sm: 640px;
 $md: 768px;
 $xl: 1024px;
@@ -589,6 +590,110 @@ footer {
   }
 }
 
+.main-contact-us {
+  display: grid;
+  place-items: start center;
+  gap: 30px;
+
+  .contact-details {
+    width: 100%;
+    max-width: 400px;
+
+    .contact-option {
+      display: flex;
+      align-items: start;
+      justify-content: start;
+      height: 70px;
+      max-width: 100%;
+      gap: 16px;
+      margin-bottom: 20px;
+
+      .option-icon {
+        width: 32px;
+      }
+
+      .option-value {
+        width: 100%;
+        color: $slate-600;
+      }
+
+      .social-medias {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 16px;
+
+        img {
+          width: 32px;
+        }
+      }
+    }
+  }
+  
+  .google-map {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    max-height: 450px;
+    
+    .map {
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.talk-to-us {
+  .contact-form {
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    // padding: 0 30px;
+    
+
+    .input-group {
+      margin-bottom: 30px;
+
+      .input-label {
+        display: block;
+        font-weight: 600;
+        color: $slate-600;
+        margin-bottom: 12px;
+      }
+      
+      .input-field {
+        display: block;
+        width: 100%;
+        padding: 8px 12px;
+        border: 2px solid $slate-200;
+        border-radius: 6px;
+        resize: vertical;
+
+      }
+
+      textarea {
+        height: calc(6 * 1.5em);
+      }
+
+      .submit-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 16px 20px;
+        font-weight: 600;
+        color: white;
+        border-radius: 6px;
+        background-color: $green-500;
+        gap: 16px;
+      }
+    }
+  }
+}
+
 @media screen and (width >= $sm) {
   nav {
     padding: 0 30px;
@@ -647,6 +752,8 @@ footer {
       }
     }
   }
+
+  
 }
 
 @media screen and (width >= $xl) {
@@ -714,5 +821,9 @@ footer {
         font-size: 36px;
       }
     }
+  }
+
+  .main-contact-us {
+    grid-template-columns: 4fr 8fr;
   }
 }
