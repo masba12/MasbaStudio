@@ -188,8 +188,8 @@ footer {
   max-height: 890px;
   background-color: $blue-600;
   grid-template-columns: 1fr;
-  padding-top: 96px;
   overflow: hidden;
+  padding-top: 0 !important;
   margin-bottom: 120px;
   
 
@@ -312,10 +312,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 30px;
   flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 120px;
 
   .why {
     display: flex;
@@ -348,9 +346,7 @@ footer {
   }
 }
 
-.services {
-  margin-bottom: 120px;
-
+.index-services {
   .service {
     display: flex;
     flex-direction: column-reverse;
@@ -405,8 +401,6 @@ footer {
 }
 
 .customer-feedback {
-  margin-bottom: 120px;
-
   .feedback-title {
     font-size: 28px;
     color: $blue-800;
@@ -447,6 +441,7 @@ footer {
 
 .main-cta {
   position: relative;
+  margin-bottom: 0;
 
   // height: 607px;
   background-image: linear-gradient(to top right, $blue-700, $blue-800);
@@ -550,6 +545,50 @@ footer {
   }
 }
 
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 96px;
+
+  .service {
+    display: flex;
+    width: 540px;
+    flex-flow: column wrap;
+
+    .service-image {
+      margin-bottom: 20px;
+    }
+
+    .service-detail {
+      .service-title {
+        display: block;
+        font-size: 24px;
+        color: $blue-800;
+        margin-bottom: 20px;
+      }
+
+      .service-description {
+        color: $slate-600;
+        margin-bottom: 80px;
+      }
+
+      .service-cta {
+        display: block;
+        width: 100%;
+        padding: 16px 20px;
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        border-radius: 6px;
+        background-color: $blue-500;
+        text-align: center;
+      }
+    }
+  }
+}
+
 @media screen and (width >= $sm) {
   nav {
     padding: 0 30px;
@@ -582,10 +621,6 @@ footer {
       padding-top: 160px;
     }
   }
-
- .services {
-  padding: 0 30px;
- }
 }
 
 @media screen and (width >= $md) {
@@ -593,6 +628,10 @@ footer {
     .section-head {
       .section-title {
         font-size: 36px;
+      }
+
+      .section-subtitle {
+        font-size: 20px;
       }
     }
   }
@@ -630,7 +669,7 @@ footer {
     }
   }
 
-  .services {
+  .index-services {
     .service {
       flex-direction: row;
       margin-bottom: 40px;
