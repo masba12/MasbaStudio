@@ -46,7 +46,7 @@ description: "Ada soalan atau ingin mulakan projek? Hubungi kami hari ini untuk 
 
 {% capture talk_to_us %}
 <div class="talk-to-us">
-	<form class="contact-form">
+	<form class="contact-form" id="contact-form">
 		<div class="input-group">
 			<label for="name" class="input-label">Nama</label>
 			<input type="text" id="name" class="input-field">
@@ -63,6 +63,26 @@ description: "Ada soalan atau ingin mulakan projek? Hubungi kami hari ini untuk 
 		</div>
 	</form>
 </div>
+
+<script>
+	const contactForm = document.querySelector("#contact-form")
+	const nameInput = contactForm.querySelector("#name")
+	const messageInput = contactForm.querySelector("#message")
+	const waNumber = "60168590975"
+
+	contactForm.addEventListener("submit", function (e) {
+		e.preventDefault()
+
+		const name = nameInput.value.trim()
+		const message = messageInput.value.trim()
+
+		const text = `Hi, my name is ${name}\n\n${message}`
+		const encodedText = encodeURIComponent(text)
+
+		location.href = `https://wa.me/${waNumber}?text=${encodedText}`
+	})
+</script>
+
 {% endcapture %}
 
 {% include section.html
